@@ -1,10 +1,8 @@
-# Function to calculate average score
 def calculate_average(a1, a2, a3):
     total = a1 + a2 + a3
     average = total / 3
     return round(average, 2)
 
-# Function to get status based on average
 def get_status(avg):
     if avg >= 90 and avg <= 100:
         return "Excellent"
@@ -15,7 +13,6 @@ def get_status(avg):
     else:
         return "Failed"
 
-# Main Program
 num_students = int(input("How many students? "))
 
 while num_students < 3:
