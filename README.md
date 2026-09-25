@@ -16,11 +16,11 @@ def get_status(avg):
         return "Failed"
 
 # Main Program
-while True:
-    num_students = int(input("How many students? "))
-    if num_students >= 3:
-        break
+num_students = int(input("How many students? "))
+
+while num_students < 3:
     print("Please enter at least 3 students.")
+    num_students = int(input("How many students? "))
 
 for i in range(num_students):
     print("")
